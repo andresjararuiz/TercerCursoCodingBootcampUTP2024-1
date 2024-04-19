@@ -18,6 +18,7 @@ function Piramide() {
 
             Forma += 'A';
         }
+        
         espacio--;
 
         Numerito += 1;

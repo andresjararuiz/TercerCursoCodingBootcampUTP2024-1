@@ -49,7 +49,7 @@ let suma = arrayNumbers.reduce(function(iReduce,iActualReducePosition){
 
 console.log("Cantidad de numeros mayores a 150: " + contadorMayores150)
 
-//---To know what is the hights and lowest number---
+//---To know what is the highest and lowest number---
 
 console.log("Numero mayor encontrado: " + Math.max(...arrayNumbers))
 console.log("Numero menor encontrado: " + Math.min(...arrayNumbers))
