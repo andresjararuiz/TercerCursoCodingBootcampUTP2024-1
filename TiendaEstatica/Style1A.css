@@ -1,0 +1,210 @@
+/*Organizar global*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato" , sans-serif;
+    background-color: rgb(93, 43, 43);
+    
+}
+/*La navbar de la pagina*/
+
+nav .desktop .Encabezado {
+    background-color: rgba(46, 5, 5, 0.894);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+/*Icono de user*/
+nav .secondary.full .Login{
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+/*Icono Efecto Hover*/
+nav .secondary.full .Login:hover{
+    background-color: #7809e6;
+    border-radius: 100%;
+}
+/*Icono Efecto Hover*/
+nav a:hover {
+    color: black;
+    background-color: #7809e6;
+    border-radius:100% 
+}
+/*Organizar dinamicamente con Flex*/
+nav .desktop {
+    display: flex ;
+    align-items: center;
+    pad: 0 20px;
+}
+/*Posicionamiento*/
+nav .Encabezado .primary .logo{
+   height: 70px;
+    padding-left: 40px;
+   display: flex;
+   
+}
+/*Posicionamiento*/
+nav .secondary.full .Carrito{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    
+}
+/*Organizar dinamicamente con Flex*/
+nav .secondary.full {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+
+}
+/*Organizar Descripcion*/
+main .Producto .Elementos{
+    font-size: 20px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(126, 27, 27);
+    padding: 30px;
+    display: block;
+}
+/*Organizar La imagen*/
+main .Producto img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding-top: 10px;
+    padding-left: 13px;
+    border-radius: 25px 25px 0 0;
+    
+}
+/*Organizar con Flex*/
+main .Producto{
+    display:flex ;
+}
+/*Organizar Seccion de nombre precio y boton*/
+main .Producto .Comprar  {
+    padding: 50px;
+    background-color: rgb(64, 8, 8);
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*Organizar Texto*/
+h3{
+    color: rgb(213, 213, 213);
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+/*Organizar texto*/
+main .Producto .Precio{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+/*Organizar boton*/
+main .Producto button{
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: grab;
+}
+/*Organizar efecto del boton*/
+main .Producto button:hover{
+    background-color: yellow;
+}
+/*Organizar posiicon del texto*/
+main .Producto .ProductoInfo{
+    padding: 15px 30px 15px 50px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*Organizar footer*/
+h4{
+    background-color: black;
+    color:white;
+    display: flex;
+}
+.Producto {
+    background-image: url(/Media/Wavy\ Lines\ Wallpaper.jpg);
+}@media screen and (max-width: 490px) {
+    .Producto {
+        background-image: none;
+    }
+
+    nav .desktop .Encabezado{
+        width: 150%;
+    }
+    nav .desktop .Encabezado img{
+        padding-top: 15px;
+
+
+    }
+    nav .desktop .Encabezado .secondary.full img{
+        padding-top: 40px;
+
+
+    }
+    }@media screen and (max-width: 400px) {
+        nav .desktop .Encabezado{
+            width: 160%;
+            
+        }
+        nav .desktop .Encabezado .primary .logo{
+            
+           padding-left: 10px;
+    
+    
+        }
+        nav .desktop .Encabezado .secondary.full img{
+            padding-top: 40px;
+    
+    
+        }
+        main .Producto{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 30px;
+            justify-content: space-between;
+            color: white;
+            gap: 20px;
+        
+        }  
+        h4{
+            background-color: black;
+            color:white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        main .Producto img{
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            padding-top: 10px;
+            padding-left: 13px;
+            border-radius: 25px 25px 0 0;
+            
+        }
+        main .Producto .Comprar{
+            text-align: center;
+            align-items: center;
+        }
+        main .Producto .Comprar .ProductoInfo{
+            text-align: center;
+            align-items: center;
+            padding-left: 10px;
+        }
+        }
