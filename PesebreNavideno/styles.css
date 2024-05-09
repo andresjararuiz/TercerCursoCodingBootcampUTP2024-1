@@ -57,6 +57,7 @@ main{
     align-items: center;
     display: flex;
     justify-content: center;
+    z-index:-2;
 }
 
 nav .Encabezado{
@@ -68,6 +69,7 @@ nav .Encabezado{
     background-color: #ffffff ;
     box-sizing: border-box;
     margin: 0%;
+    z-index: 5;
 }
 
 .Encabezado img{
@@ -136,16 +138,17 @@ main .juego{
     transition: transform 0.5s;
     transform-style: preserve-3d;
 }
-.Contenedor{
+.contenedor{
     margin-bottom: 3.75rem;
     max-width: 37.5rem;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    z-index: 1;
-    padding-top: 1.25rem;
-    gap: .75rem;
-    border: solid red
+    z-index: 0;
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+    border:
+
 }
 .memorama .Active{
     border: #7b4600;
@@ -155,13 +158,18 @@ main .memorama img{
     height:7.8125rem;
     align-items: center;
     padding: 0 .3125rem .3125rem 0;
-    z-index: 1;
+    z-index: -2;
     position: relative;
     backface-visibility: hidden;
-    border: solid orange
+
+}
+.Game{
+    z-index: 0;
+    height: 150px;
 }
 main .memorama{
-    
+    margin-bottom: 90%;
+    padding: .1875rem;
 }
 .memorama .memorama2{
     position: absolute
@@ -172,7 +180,6 @@ main .memorama{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    border: solid rgb(255, 0, 0);
     perspective: 1000px;
     z-index: -1;
     transition: transform 0.3s ease-in-out;
@@ -196,6 +203,7 @@ footer{
     position: fixed;
     bottom:0;
     width:100%;
+    z-index: 50;
 }
 footer  .izquierda img{
 width: 9.375rem;

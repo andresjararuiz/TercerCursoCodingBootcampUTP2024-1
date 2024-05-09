@@ -36,7 +36,6 @@ cartas.appendChild(caraback)
     imagen.src = "/img/tarjeta_cubierta.png";
     imagen.alt = "Tarjeta " + idCartas[i];
     imagen.classList.add("Tarjeta")
-    imagen.tabIndex = "0"
     imagen.id = idCartas[i];
     carafront.appendChild(imagen);
 }
