@@ -1,0 +1,35 @@
+.app {
+    display: flex;
+}
+
+.categories-menu {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.subcategories {
+    margin-left: 20px;
+}
