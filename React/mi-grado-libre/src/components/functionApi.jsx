@@ -1,6 +1,7 @@
 
 import React ,{ useState, useEffect } from "react";
 
+
 export function InfoProducts() {
 
 		const [ products, setProducts] = useState([])
@@ -33,7 +34,7 @@ export function InfoProducts() {
 						
 					))}
 				</div>
-			)
+			);
 	
 }
 
