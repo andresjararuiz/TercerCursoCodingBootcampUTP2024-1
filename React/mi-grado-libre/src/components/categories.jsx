@@ -18,16 +18,33 @@ export function InfoCategories() {
             const newLinks = data.map((data2) => {
                 const categoryID = data2.category_id;
                 const nuevoLink = `${urlCategories}=${categoryID}`;
-				console.log(nuevoLink)
+				setLink(nuevoLink)
 				return nuevoLink
             });
-            setLink(newLinks);
-			
+            
         });
     };
 
     useEffect(() => {
         Renderizando(urlCategories);
     }, []);
+
+    return(
+
+        <div className="categorias">{
+            categories.map((cat) => (
+                    <div className="cadaCategoria">
+                      <a href={cat}> {cat.category_id}</a>
+                         </div>
+                
+
+            ))
+
+        }
+        
+        </div>
+    )
+
+
 
 }

@@ -5,12 +5,13 @@ import './App.css';
 function App() {
   return (
     <>
+  <div className='todo'>
+    <InfoCategories />
       <InfoProducts />
-      <InfoCategories></InfoCategories>
+      </div>
     </>
       
-    
-    
+
   );
 }
 

@@ -23,7 +23,6 @@ export function InfoProducts() {
 			return(
 				<div className="products">{
 					products.map((data) => (
-
 						<div className="container-producto">
 							<a className="interior-container" href={data.permalink}target="/blank">
 								<h3 className="titulo-producto">{data.title}</h3>
@@ -31,7 +30,6 @@ export function InfoProducts() {
 								<p className="precio-producto">El precio es ${data.price}</p>
 							</a>
 						</div>
-						
 					))}
 				</div>
 			);
